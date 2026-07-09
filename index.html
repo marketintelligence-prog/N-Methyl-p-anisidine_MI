@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N-Methyl-p-anisidine — Market Intelligence Report</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; color: #222; display: flex; min-height: 100vh; font-size: 14px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+  /* SIDEBAR */
+  #sidebar { width: 260px; min-width: 260px; background: #0d1b2a; color: #cdd9e5; position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column; z-index: 100; }
+  #sidebar .brand { padding: 22px 18px 14px; border-bottom: 1px solid #1e3149; }
+  #sidebar .brand .tag { font-size: 9px; letter-spacing: 2px; color: #4fc3f7; text-transform: uppercase; font-weight: 700; }
+  #sidebar .brand h2 { font-size: 15px; color: #e8f4fd; margin-top: 4px; line-height: 1.3; }
+  #sidebar .brand p { font-size: 10px; color: #7a9ab5; margin-top: 3px; }
+  #sidebar nav { padding: 14px 0; flex: 1; }
+  #sidebar nav .section-group { padding: 6px 0; }
+  #sidebar nav a { display: flex; align-items: center; gap: 10px; padding: 8px 18px; color: #9ab8cc; text-decoration: none; font-size: 12px; font-weight: 500; transition: all 0.2s; border-left: 3px solid transparent; }
+  #sidebar nav a:hover, #sidebar nav a.active { color: #4fc3f7; background: rgba(79,195,247,0.07); border-left-color: #4fc3f7; }
+  #sidebar nav a .num { background: #1e3149; color: #4fc3f7; font-size: 10px; font-weight: 700; min-width: 22px; height: 22px; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+  #sidebar .pdf-btn { padding: 16px 18px; border-top: 1px solid #1e3149; }
+  #sidebar .pdf-btn button { width: 100%; background: #4fc3f7; color: #0d1b2a; font-weight: 700; font-size: 13px; border: none; border-radius: 7px; padding: 11px; cursor: pointer; transition: background 0.2s; }
+  #sidebar .pdf-btn button:hover { background: #29b6f6; }
+  .meta-row { padding: 10px 18px; font-size: 10px; color: #556a7a; border-bottom: 1px solid #1e3149; }
+  .meta-row span { display: block; margin-bottom: 3px; }
+  .meta-row strong { color: #7a9ab5; }
+
+  /* MAIN */
+  #main { margin-left: 260px; flex: 1; padding: 0; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #0d1b2a 0%, #1565c0 60%, #0d2a40 100%); color: white; padding: 44px 44px 36px; }
+  .hero .report-tag { font-size: 10px; letter-spacing: 3px; color: #4fc3f7; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }
+  .hero h1 { font-size: 46px; font-weight: 900; line-height: 1.05; letter-spacing: -1px; }
+  .hero h1 span { color: #4fc3f7; }
+  .hero .sub { font-size: 14px; color: #b0cce0; margin-top: 10px; max-width: 700px; line-height: 1.6; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .badge { border: 1px solid rgba(79,195,247,0.4); color: #b0cee0; border-radius: 20px; padding: 4px 13px; font-size: 11px; font-weight: 500; }
+  .badge.app { background: rgba(79,195,247,0.1); border-color: rgba(79,195,247,0.3); }
+  .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+  .kpi { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 20px; }
+  .kpi .val { font-size: 26px; font-weight: 900; line-height: 1.1; }
+  .kpi .val.green { color: #66bb6a; }
+  .kpi .val.amber { color: #ffa726; }
+  .kpi .val.blue { color: #4fc3f7; }
+  .kpi .val.red { color: #ef5350; }
+  .kpi .lbl { font-size: 11px; color: #7a9ab5; margin-top: 4px; }
+
+  /* CONTENT */
+  .content { padding: 36px 44px; }
+  .section { margin-bottom: 44px; scroll-margin-top: 20px; }
+  .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+  .section-num { background: #1565c0; color: white; font-size: 14px; font-weight: 800; width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .section-header h2 { font-size: 22px; font-weight: 700; color: #1a2b3c; }
+  .section-header h2 span { color: #1565c0; }
+
+  /* CARDS */
+  .card { background: white; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); margin-bottom: 18px; overflow: hidden; }
+  .card-header { background: #f5f9ff; border-left: 4px solid #1565c0; padding: 12px 18px; font-size: 13px; font-weight: 700; color: #1565c0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .card-body { padding: 18px; }
+
+  /* PROPERTY GRID */
+  .prop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .prop { background: #f8fafc; border-radius: 8px; padding: 12px 14px; }
+  .prop .plabel { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #7a8a9a; font-weight: 600; margin-bottom: 4px; }
+  .prop .pval { font-size: 14px; color: #1a2b3c; font-weight: 600; }
+
+  /* TABLES */
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #1565c0; color: white; padding: 10px 12px; text-align: left; font-weight: 600; font-size: 11px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  td { padding: 9px 12px; border-bottom: 1px solid #eef2f7; vertical-align: top; line-height: 1.4; }
+  tr:nth-child(even) td { background: #f8fafc; }
+  tr:hover td { background: #eff6ff; }
+  .india-row td { background: #fff8e1 !important; border-left: 3px solid #f9a825; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .india-row td:first-child { font-weight: 700; }
+  a { color: #1565c0; text-decoration: none; font-size: 11px; }
+  a:hover { text-decoration: underline; }
+
+  /* ALERTS */
+  .alert { border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; font-size: 13px; line-height: 1.5; }
+  .alert-info { background: #e3f2fd; border-left: 4px solid #1565c0; color: #0d47a1; }
+  .alert-warning { background: #fff8e1; border-left: 4px solid #f9a825; color: #7a4a00; }
+  .alert-success { background: #e8f5e9; border-left: 4px solid #43a047; color: #1b5e20; }
+  .alert-danger { background: #ffebee; border-left: 4px solid #e53935; color: #7a0000; }
+
+  /* SWOT */
+  .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .swot-q { border-radius: 8px; padding: 16px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .swot-q h4 { font-size: 13px; font-weight: 700; margin-bottom: 10px; }
+  .swot-q ul { padding-left: 16px; font-size: 12.5px; line-height: 1.7; }
+  .swot-s { background: #e8f5e9; } .swot-s h4 { color: #1b5e20; }
+  .swot-w { background: #ffebee; } .swot-w h4 { color: #7a0000; }
+  .swot-o { background: #e3f2fd; } .swot-o h4 { color: #0d47a1; }
+  .swot-t { background: #fff8e1; } .swot-t h4 { color: #7a4a00; }
+
+  /* PORTER */
+  .porter-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .porter-card { border-radius: 8px; padding: 14px; background: white; border-top: 4px solid #ccc; box-shadow: 0 1px 3px rgba(0,0,0,0.06); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .porter-card h4 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .porter-card .intensity { font-size: 13px; font-weight: 800; margin-bottom: 8px; }
+  .porter-card p { font-size: 12px; color: #444; line-height: 1.5; }
+  .porter-high { border-top-color: #e53935; } .porter-high .intensity { color: #e53935; }
+  .porter-medium { border-top-color: #fb8c00; } .porter-medium .intensity { color: #fb8c00; }
+  .porter-low { border-top-color: #43a047; } .porter-low .intensity { color: #43a047; }
+
+  /* PESTLE */
+  .pestle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .pestle-card { background: white; border-radius: 8px; border-left: 4px solid #1565c0; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .pestle-card h4 { font-size: 12px; font-weight: 700; color: #1565c0; margin-bottom: 8px; }
+  .pestle-card ul { padding-left: 16px; font-size: 12px; color: #333; line-height: 1.7; }
+
+  /* BCG */
+  .bcg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .bcg-q { border-radius: 8px; padding: 16px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .bcg-q h4 { font-size: 14px; font-weight: 800; margin-bottom: 8px; }
+  .bcg-q p { font-size: 12px; line-height: 1.5; }
+  .bcg-star { background: #fff9c4; } .bcg-star h4 { color: #f57f17; }
+  .bcg-qm { background: #e3f2fd; border: 2px solid #1565c0; } .bcg-qm h4 { color: #1565c0; }
+  .bcg-cow { background: #e8f5e9; } .bcg-cow h4 { color: #2e7d32; }
+  .bcg-dog { background: #fafafa; border: 1px solid #ddd; } .bcg-dog h4 { color: #777; }
+
+  /* ANSOFF */
+  .ansoff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .ansoff-card { background: white; border-radius: 8px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .ansoff-card h4 { font-size: 12px; font-weight: 700; color: #1a2b3c; margin-bottom: 6px; }
+  .ansoff-card .tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; margin-bottom: 8px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .tag-rec { background: #e8f5e9; color: #2e7d32; }
+  .tag-na { background: #f3f3f3; color: #777; }
+  .tag-lt { background: #e3f2fd; color: #0d47a1; }
+  .tag-caut { background: #fff8e1; color: #7a4a00; }
+  .ansoff-card p { font-size: 12px; color: #444; line-height: 1.5; }
+
+  /* VALUE CHAIN */
+  .vc-row { display: flex; gap: 0; margin-bottom: 14px; flex-wrap: wrap; }
+  .vc-step { padding: 9px 14px; font-size: 11px; font-weight: 600; border-radius: 0; flex: 1; min-width: 100px; text-align: center; position: relative; }
+  .vc-step:not(:last-child)::after { content: '▶'; position: absolute; right: -7px; top: 50%; transform: translateY(-50%); z-index: 1; color: #aaa; font-size: 12px; }
+  .vc-active { background: #1565c0; color: white; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .vc-inactive { background: #e8ecf0; color: #666; }
+
+  /* NEXT STEPS */
+  .steps-list { display: flex; flex-direction: column; gap: 12px; }
+  .step-item { display: flex; align-items: flex-start; gap: 14px; background: white; border-radius: 8px; padding: 14px 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .step-num { background: #1565c0; color: white; font-weight: 800; font-size: 14px; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .step-content h4 { font-size: 13px; font-weight: 700; color: #1a2b3c; }
+  .step-content p { font-size: 12px; color: #556; margin-top: 3px; }
+
+  /* VERDICT BOX */
+  .verdict { background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); border: 2px solid #43a047; border-radius: 12px; padding: 22px 26px; margin-bottom: 20px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .verdict .vtag { font-size: 11px; letter-spacing: 2px; font-weight: 700; color: #2e7d32; text-transform: uppercase; }
+  .verdict h3 { font-size: 20px; font-weight: 800; color: #1b5e20; margin: 6px 0 10px; }
+  .verdict p { font-size: 13px; color: #2e4a2e; line-height: 1.6; }
+
+  /* RISK TAGS */
+  .risk-h { background: #ffcdd2; color: #7a0000; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .risk-m { background: #fff9c4; color: #7a4a00; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .risk-l { background: #c8e6c9; color: #1b5e20; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+  /* MODE TAGS */
+  .mode-go { background: #e8f5e9; color: #2e7d32; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .mode-opp { background: #e3f2fd; color: #0d47a1; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .mode-wait { background: #fff8e1; color: #7a4a00; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .mode-long { background: #f3f3f3; color: #555; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 12px; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+  /* REFS */
+  .refs-list { list-style: none; counter-reset: ref-counter; }
+  .refs-list li { counter-increment: ref-counter; padding: 8px 12px 8px 0; border-bottom: 1px solid #eef; font-size: 12px; display: flex; gap: 10px; }
+  .refs-list li::before { content: '[' counter(ref-counter) ']'; color: #1565c0; font-weight: 700; min-width: 30px; }
+
+  /* FOOTER */
+  footer { background: #0d1b2a; color: #556a7a; text-align: center; padding: 18px; font-size: 11px; margin-top: 20px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+  /* SUPPLY TAG */
+  .sup-high { color: #b71c1c; font-weight: 700; }
+  .sup-med { color: #e65100; font-weight: 700; }
+  .sup-low { color: #2e7d32; font-weight: 700; }
+  .avail-wide { background: #e8f5e9; color: #2e7d32; font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 600; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .avail-import { background: #fff8e1; color: #7a4a00; font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 600; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .avail-specialty { background: #ffebee; color: #7a0000; font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 600; display: inline-block; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+  @media print {
+    #sidebar { display: none; }
+    #main { margin-left: 0; }
+    .content { padding: 20px; }
+    .hero { padding: 24px; }
+    body { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <div class="brand">
+    <div class="tag">Market Intelligence Report · June 2026</div>
+    <h2>N-Methyl-p-anisidine (NMPA)</h2>
+    <p>Specialty Chemicals Division</p>
+  </div>
+  <div class="meta-row">
+    <span><strong>CAS:</strong> 5961-59-1</span>
+    <span><strong>Formula:</strong> C₈H₁₁NO · 137.18 g/mol</span>
+    <span><strong>Prepared:</strong> June 2026</span>
+  </div>
+  <nav>
+    <div class="section-group">
+      <a href="#s01"><span class="num">01</span> Product Overview</a>
+      <a href="#s02"><span class="num">02</span> Synthesis & Mfg.</a>
+      <a href="#s03"><span class="num">03</span> Applications</a>
+      <a href="#s04"><span class="num">04</span> Market Analysis</a>
+      <a href="#s05"><span class="num">05</span> Pricing Intelligence</a>
+      <a href="#s06"><span class="num">06</span> Regulatory</a>
+      <a href="#s07"><span class="num">07</span> Target Customers</a>
+      <a href="#s08"><span class="num">08</span> Strategy Frameworks</a>
+      <a href="#s09"><span class="num">09</span> Feasibility</a>
+      <a href="#s10"><span class="num">10</span> References</a>
+    </div>
+  </nav>
+  <div class="pdf-btn">
+    <button onclick="window.print()">⬇ Download PDF</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="report-tag">Market Intelligence Report · June 2026 · Specialty Chemicals Division</div>
+    <h1>N-METHYL-P-<span>ANISIDINE</span></h1>
+    <p class="sub">A comprehensive strategic intelligence report covering product properties, synthesis routes, global & India market analysis, pricing, regulatory compliance, and business feasibility — prepared for senior management decision-making.</p>
+    <div class="badges">
+      <span class="badge">CAS 5961-59-1</span>
+      <span class="badge">C₈H₁₁NO · MW 137.18 g/mol</span>
+      <span class="badge">4-Methoxy-N-methylaniline</span>
+      <span class="badge app">Dye Intermediate</span>
+      <span class="badge app">Pharma Intermediate</span>
+      <span class="badge app">Agrochemical Intermediate</span>
+      <span class="badge app">Specialty Amine</span>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="val amber">NICHE</div>
+        <div class="lbl">Market Status — derivative of p-Anisidine family</div>
+      </div>
+      <div class="kpi">
+        <div class="val blue">USD 102M→142M</div>
+        <div class="lbl">p-Anisidine Family Market 2024→2031 (CAGR 4.4%)</div>
+      </div>
+      <div class="kpi">
+        <div class="val green">&lt; USD 5M</div>
+        <div class="lbl">Est. N-Methyl-p-anisidine (NMPA) Specific Market</div>
+      </div>
+      <div class="kpi">
+        <div class="val red">~75–85%</div>
+        <div class="lbl">China Supply Share — concentration risk</div>
+      </div>
+      <div class="kpi">
+        <div class="val amber">0%</div>
+        <div class="lbl">India Domestic Production — first-mover opportunity</div>
+      </div>
+      <div class="kpi">
+        <div class="val blue">Pharma + Dyes</div>
+        <div class="lbl">Primary End-Use Sectors — stable demand pull</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- SECTION 01 -->
+    <div class="section" id="s01">
+      <div class="section-header">
+        <div class="section-num">01</div>
+        <h2>Product Overview &amp; <span>Identity</span></h2>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Chemical Identity</div>
+        <div class="card-body">
+          <div class="prop-grid">
+            <div class="prop"><div class="plabel">IUPAC Name</div><div class="pval">4-Methoxy-N-methylaniline</div></div>
+            <div class="prop"><div class="plabel">CAS Number</div><div class="pval">5961-59-1</div></div>
+            <div class="prop"><div class="plabel">Molecular Formula</div><div class="pval">C₈H₁₁NO</div></div>
+            <div class="prop"><div class="plabel">Molecular Weight</div><div class="pval">137.18 g/mol</div></div>
+            <div class="prop"><div class="plabel">PubChem CID</div><div class="pval">22250</div></div>
+            <div class="prop"><div class="plabel">InChI Key</div><div class="pval">JFXDIXYFXDOZIT-UHFFFAOYSA-N</div></div>
+            <div class="prop"><div class="plabel">SMILES</div><div class="pval">C1(NC)=CC=C(OC)C=C1</div></div>
+            <div class="prop"><div class="plabel">EC Number</div><div class="pval">227-520-9 (ECHA C&amp;L Inventory)</div></div>
+            <div class="prop"><div class="plabel">FDA UNII</div><div class="pval">BY92T4GBX5</div></div>
+            <div class="prop"><div class="plabel">MDL Number</div><div class="pval">MFCD00008399</div></div>
+          </div>
+          <p style="margin-top:14px; font-size:12px; color:#556;">Sources: <a href="https://pubchem.ncbi.nlm.nih.gov/compound/22250" target="_blank">PubChem CID 22250</a> | <a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook CAS 5961-59-1</a> | <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=5961-59-1&Units=SI" target="_blank">NIST WebBook</a></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Synonyms</div>
+        <div class="card-body">
+          <p style="font-size:13px; line-height:1.8;">N-Methyl-4-anisidine · N-Methyl-p-ansidine · 4-Methoxy-N-methylbenzenamine · N-(4-Methoxyphenyl)-N-methylamine · p-Methoxy-N-methylaniline · 1-Methylamino-4-methoxybenzene · N-Methyl-4-methoxyaniline · p-Anisidine, N-methyl- · Benzenamine, 4-methoxy-N-methyl- (9CI) · NMPA</p>
+          <p style="font-size:11px; color:#777; margin-top:8px;">Source: <a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a> | <a href="https://www.sigmaaldrich.com/US/en/product/aldrich/180033" target="_blank">Sigma-Aldrich Aldrich-180033</a></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Introductory Overview</div>
+        <div class="card-body">
+          <p style="font-size:13px; line-height:1.7;">N-Methyl-p-anisidine (NMPA, CAS 5961-59-1) is an N-methylated derivative of p-Anisidine (4-methoxyaniline), a secondary aromatic amine bearing both a methoxy group (–OCH₃) at the para-position of the benzene ring and a methylamino group (–NHCH₃). The combination of the electron-donating methoxy substituent with the secondary amine makes this compound a reactive building block in azo dye synthesis, pharmaceutical API intermediate production, and agrochemical intermediate chemistry. It is a low-melting waxy solid / liquid at room temperature, making handling straightforward but requiring cool storage. NMPA is commercially produced primarily via N-methylation of p-Anisidine — itself a globally traded intermediate with a well-characterized supply chain centered in China. The N-methyl derivative offers distinct reactivity versus the primary amine (p-Anisidine), enabling selective monoalkylation chemistry in downstream applications. It sits in the specialty amine segment of the fine chemicals market, with demand driven by high-value applications in dye manufacturing, pharmaceutical synthesis, and organic chemistry research.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Physical &amp; Chemical Properties</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Property</th><th>Value</th><th>Source</th></tr>
+            <tr><td>Appearance</td><td>White or colorless to yellow-brown powder / lump / liquid (low-melting solid)</td><td><a href="https://www.tcichemicals.com/US/en/p/M1743" target="_blank">TCI Chemicals (M1743)</a></td></tr>
+            <tr><td>Melting Point</td><td>33–36 °C (lit.)</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Boiling Point</td><td>135–136 °C at 19 mm Hg (lit.)</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Density</td><td>~1.063 g/cm³ (rough estimate)</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Flash Point</td><td>&gt;230 °F (&gt;110 °C)</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Refractive Index</td><td>1.5470 (estimate)</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>pKa</td><td>5.55 ± 0.12 (predicted)</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Solubility</td><td>Soluble in methanol, ethanol, DCM, most organic solvents; limited aqueous solubility</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Storage Conditions</td><td>Keep in dark place, inert atmosphere, room temperature (sealed); refrigeration recommended for long-term</td><td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a></td></tr>
+            <tr><td>Physical State at RT</td><td>Solid (just above RT; low-melting waxy solid; may liquefy in warm conditions)</td><td><a href="https://www.tcichemicals.com/US/en/p/M1743" target="_blank">TCI Chemicals</a></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Product Grades</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Grade</th><th>Purity %</th><th>Primary Use</th><th>Typical Specification</th></tr>
+            <tr><td>Research Grade</td><td>≥98.0% (GC)</td><td>Pharmaceutical R&amp;D, reference standards, CRO custom synthesis</td><td>Sigma-Aldrich Aldrich-180033 spec</td></tr>
+            <tr><td>Standard Grade</td><td>≥96.0% (GC)</td><td>Organic synthesis, dye intermediate production</td><td>TCI Chemicals M1743 specification</td></tr>
+            <tr><td>Technical Grade</td><td>≥95% (approx.)</td><td>Industrial azo dye synthesis, bulk API intermediate</td><td>RFQ from Chinese bulk suppliers</td></tr>
+          </table>
+          <p style="margin-top:10px; font-size:11px; color:#777;">Sources: <a href="https://www.sigmaaldrich.com/US/en/product/aldrich/180033" target="_blank">Sigma-Aldrich Aldrich-180033</a> | <a href="https://www.tcichemicals.com/US/en/p/M1743" target="_blank">TCI Chemicals M1743</a></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">HS Codes</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Region</th><th>HS Code</th><th>Description</th></tr>
+            <tr class="india-row"><td>🇮🇳 India (ITC-HS)</td><td>2921 42 90</td><td>Aromatic monoamines — aniline derivatives, N-substituted — others (not elsewhere classified); secondary aromatic amines; N-alkyl-substituted anilines</td></tr>
+            <tr><td>International (WCO)</td><td>2921.42</td><td>Aniline derivatives and their salts — others (N-substituted anilines)</td></tr>
+          </table>
+          <div class="alert alert-warning" style="margin-top:12px;">⚠ HS code classification must be verified with a licensed customs broker / Chartered Accountant before any import/export transaction. Confirm applicability with DGFT and Indian Customs. Note: secondary aromatic amines may be classified differently at 8-digit level.</div>
+          <p style="font-size:11px; color:#777;">Source: <a href="https://www.icegate.gov.in/" target="_blank">ICEGATE India Customs</a> | WCO Harmonized System 2022 Edition</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 02 -->
+    <div class="section" id="s02">
+      <div class="section-header">
+        <div class="section-num">02</div>
+        <h2>Synthesis &amp; <span>Manufacturing</span></h2>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Key Synthesis Routes</div>
+        <div class="card-body">
+          <table>
+            <tr><th>#</th><th>Route Name</th><th>Starting Materials</th><th>Key Conditions / Steps</th><th>Yield</th><th>Reference</th></tr>
+            <tr>
+              <td>1</td>
+              <td><strong>Direct N-Methylation of p-Anisidine</strong><br><span style="font-size:10px; background:#e3f2fd; color:#0d47a1; padding:1px 6px; border-radius:10px;">Preferred Industrial Route</span></td>
+              <td>p-Anisidine (CAS 104-94-9) + methylating agent (formaldehyde + formic acid / dimethyl sulfate / methyl iodide)</td>
+              <td><em>Leuckart-Wallach reductive amination:</em> p-Anisidine + HCHO/HCOOH, 80–120°C → selective N-mono-methylation.<br>OR: <em>Dimethyl sulfate route:</em> p-Anisidine + (CH₃)₂SO₄ in alkaline aqueous medium → N-methyl product; requires pH control to prevent di-methylation.</td>
+              <td>70–85%</td>
+              <td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook (2026)</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Reductive Amination</strong><br><span style="font-size:10px; background:#e8f5e9; color:#2e7d32; padding:1px 6px; border-radius:10px;">Research / Lab Route</span></td>
+              <td>4-Methoxybenzaldehyde (anisaldehyde) + methylamine (CH₃NH₂) + reducing agent (NaBH₄ or H₂/Pd)</td>
+              <td>Schiff base formation between anisaldehyde and methylamine → reduction to secondary amine. NaBH₄ in MeOH or catalytic hydrogenation.</td>
+              <td>60–75%</td>
+              <td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook</a>; General Reductive Amination Ref.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>N-Methylation via Paraformaldehyde/NaBH₄</strong><br><span style="font-size:10px; background:#fff8e1; color:#7a4a00; padding:1px 6px; border-radius:10px;">Lab / Custom Synthesis</span></td>
+              <td>p-Anisidine + paraformaldehyde + NaBH₄ in methanol/THF</td>
+              <td>Controlled addition of paraformaldehyde to p-Anisidine at RT; NaBH₄ reduction of iminium intermediate at 0°C→RT. Selective mono-N-methylation achievable with controlled stoichiometry.</td>
+              <td>65–80%</td>
+              <td><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">ChemicalBook (reaction partners listed)</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>N-Methyl-p-anisidine via Hydrogenation Route</strong><br><span style="font-size:10px; background:#f3e5f5; color:#6a1b9a; padding:1px 6px; border-radius:10px;">Industrial Multi-step</span></td>
+              <td>4-Nitroanisole → p-Anisidine (intermediate) → N-methylation</td>
+              <td>Step 1: 4-Nitroanisole hydrogenation (Raney Ni or Pd/C catalyst) → p-Anisidine. Step 2: N-methylation as in Route 1. Full integrated route used by Chinese manufacturers.</td>
+              <td>Variable (overall ~60–70% from nitroanisole)</td>
+              <td>General industrial process; <a href="https://www.aarti-industries.com/Products/chemical-products/chemistry/hydrogenation/-para-anisidine-(pa)" target="_blank">Aarti Industries (p-Anisidine producer)</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Key Raw Materials</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Raw Material</th><th>Source / Origin</th><th>India Availability</th><th>Role in Route</th></tr>
+            <tr class="india-row"><td>p-Anisidine (CAS 104-94-9)</td><td>Manufactured in India — Aarti Industries (Vapi), Surya Life Sciences, Pravin Dyechem; major global supply from China</td><td><span class="avail-wide">Widely Available</span></td><td>Primary starting material for Routes 1, 3, 4 — the direct precursor to NMPA</td></tr>
+            <tr><td>Formaldehyde / Paraformaldehyde</td><td>Commodity chemical — widely produced globally and in India</td><td><span class="avail-wide">Widely Available</span></td><td>Methylating agent in Routes 1 (Leuckart) and 3</td></tr>
+            <tr><td>Formic Acid</td><td>Commodity — widely available India &amp; global</td><td><span class="avail-wide">Widely Available</span></td><td>Reducing agent in Leuckart-Wallach methylation (Route 1)</td></tr>
+            <tr><td>Dimethyl Sulfate</td><td>Specialty hazardous chemical — India manufacturers (SRF, Gujarat Fluorochemicals); China</td><td><span class="avail-import">Importable</span></td><td>Methylating agent in Route 1 (alternative method); toxic — requires careful handling</td></tr>
+            <tr><td>Sodium Borohydride (NaBH₄)</td><td>Specialty reducing agent — imported; Vertellus (US), Kemira (Finland), Shenzhen Sendi</td><td><span class="avail-import">Importable</span></td><td>Reducing agent in Routes 2 and 3</td></tr>
+            <tr><td>4-Methoxybenzaldehyde (p-Anisaldehyde)</td><td>Flavor &amp; fragrance chemical — some India supply (Aromaaz, Fine Organics)</td><td><span class="avail-import">Importable / Limited Domestic</span></td><td>Starting material for Route 2 (reductive amination)</td></tr>
+            <tr><td>Methylamine (CH₃NH₂)</td><td>Specialty gas/solution — imported; BASF (Germany), CABB (Germany), Mitsubishi (Japan)</td><td><span class="avail-specialty">Imported Specialty</span></td><td>Starting material for Route 2</td></tr>
+          </table>
+          <div class="alert alert-success" style="margin-top:14px;">🇮🇳 <strong>India Strategic Note:</strong> India is a significant producer of p-Anisidine itself (Aarti Industries, Vapi is a top manufacturer and exporter). This creates a clear vertical integration opportunity: an India-based NMPA producer has domestic access to the key starting material at competitive prices, potentially enabling cost-advantaged synthesis versus sourcing NMPA from China.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Manufacturing Complexity Assessment</div>
+        <div class="card-body">
+          <div class="prop-grid">
+            <div class="prop"><div class="plabel">Complexity Rating</div><div class="pval">MEDIUM</div></div>
+            <div class="prop"><div class="plabel">Key Challenge</div><div class="pval">Selectivity — avoiding N,N-dimethylation (over-methylation) requires careful stoichiometry control</div></div>
+            <div class="prop"><div class="plabel">Temperature Sensitivity</div><div class="pval">Moderate; Leuckart route at 80–120°C; reductive amination at 0–25°C. Not cryogenic.</div></div>
+            <div class="prop"><div class="plabel">Catalyst Dependency</div><div class="pval">Low (Leuckart route — no catalyst); Moderate (hydrogenation route — Pd/C or Raney Ni)</div></div>
+            <div class="prop"><div class="plabel">Hazardous Reagents</div><div class="pval">Dimethyl sulfate (highly toxic — alternate routes preferred); formic acid; methylamine gas</div></div>
+            <div class="prop"><div class="plabel">Scale-up Feasibility</div><div class="pval">HIGH — Leuckart-Wallach route is a well-established industrial process; no exotic equipment</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 03 -->
+    <div class="section" id="s03">
+      <div class="section-header">
+        <div class="section-num">03</div>
+        <h2>Industry Applications &amp; <span>Markets</span></h2>
+      </div>
+
+      <p style="font-size:13px; line-height:1.7; margin-bottom:18px;">N-Methyl-p-anisidine serves as a versatile secondary aromatic amine building block across three primary application clusters: dye and pigment intermediates (largest volume), pharmaceutical intermediates, and agrochemical / fine chemistry intermediates. Its N-methyl group imparts distinct reactivity versus the parent p-Anisidine, making it the preferred choice where secondary-amine coupling or selectivity is required.</p>
+
+      <!-- 3.1 -->
+      <div class="card">
+        <div class="card-header">3.1 — Dye &amp; Pigment Intermediates (Primary Volume Application)</div>
+        <div class="card-body">
+          <p style="font-size:13px; line-height:1.7; margin-bottom:14px;">NMPA is a key coupling component and intermediate in the synthesis of azo dyes, disperse dyes, and acid dyes for textile and paper coloration. Its para-methoxy group activates the ring for electrophilic coupling, while the N-methyl group modulates the electron density and color profile of the resulting azo chromophore versus the primary amine analog. Used in disperse dye programs requiring specific shade shifts (orange-red) and in specialty ink systems.</p>
+          <table>
+            <tr><th>End-Product / Formulation</th><th>Details of Use</th><th>Key Companies</th></tr>
+            <tr><td>Disperse Azo Dyes (polyester)</td><td>NMPA used as coupling component in diazotization–coupling reactions to produce disperse dyes for polyester fiber coloration; N-methyl group gives red-orange shades with improved washfastness vs primary amine analogs</td><td>Huntsman Textile Effects, Archroma, DyStar (Germany/Singapore), Sudarshan Chemical (India)</td></tr>
+            <tr><td>Acid Dyes (wool, nylon)</td><td>Secondary aromatic amine coupling component for acid dye manufacture; NMPA provides specific hue modifications</td><td>Clariant AG (Switzerland), Atul Ltd (India), Kolorjet Chemicals (India)</td></tr>
+            <tr><td>Azo Pigments</td><td>Intermediate for organic pigment synthesis where secondary N-methyl substitution is specified</td><td>BASF SE, Sudarshan Chemical (India), Heubach Group (Germany)</td></tr>
+            <tr><td>Specialty Ink Colorants</td><td>Digital and offset printing ink colorants incorporating N-substituted aniline derivatives for solubility and shade control</td><td>Sun Chemical (US/Japan), Flint Group (Germany)</td></tr>
+          </table>
+          <div class="alert alert-info" style="margin-top:12px;">ℹ️ The p-Anisidine family (including NMPA as N-methyl derivative) represents approximately 80% of parent class demand in the dye and pigment sector, per market analysis of the p-Anisidine derivatives market. Source: <a href="https://www.reportsanddata.com/report-detail/p-anisidine-market" target="_blank">Reports and Data, 2024</a></div>
+          <br>
+          <strong style="font-size:12px;">Application Market Size — Dyes &amp; Pigments (downstream)</strong>
+          <table style="margin-top:8px;">
+            <tr><th>Market Segment</th><th>Global Market Size</th><th>CAGR</th><th>Major Players</th><th>Source</th></tr>
+            <tr><td>Global p-Anisidine family market (incl. NMPA)</td><td>USD 102M (2024) → USD 142M (2031)</td><td>4.4%</td><td>Ningxia Huayu Chemical (China), Lianyungang Taisheng (China), Aarti Industries (India)</td><td><a href="https://www.qyresearch.com/reports/5045149/p-anisidine" target="_blank">QYResearch 2025</a></td></tr>
+            <tr><td>Global Dyes &amp; Pigments market</td><td>~USD 38B (2024)</td><td>~5.2%</td><td>DyStar, Archroma, Huntsman, Atul Ltd, Sudarshan Chemical</td><td>General industry data</td></tr>
+            <tr><td>Disperse Dyes segment</td><td>~USD 5.5B (2024)</td><td>~5.8%</td><td>Huntsman, Archroma, DyStar, Jihua Group (China), Atul Ltd (India)</td><td>General market research</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3.2 -->
+      <div class="card">
+        <div class="card-header">3.2 — Pharmaceutical Intermediates</div>
+        <div class="card-body">
+          <p style="font-size:13px; line-height:1.7; margin-bottom:14px;">NMPA serves as a pharmaceutical intermediate for the synthesis of amine-based drugs. As a secondary N-methylated methoxyphenyl amine, it provides the N-methyl-4-methoxyphenylamine skeleton used in several drug class syntheses. Per Nordmann Global (distributor), it is described as "commonly used in pharmaceutical manufacturing for the synthesis of various active pharmaceutical ingredients (APIs) … known for its role in producing amine-based drugs."</p>
+          <table>
+            <tr><th>API / Drug Class</th><th>Role of NMPA</th><th>Key Companies</th></tr>
+            <tr><td>Amine-based API intermediates (general)</td><td>NMPA used as N-methyl secondary amine building block where the 4-methoxyphenyl-N-methyl motif is required in the target structure</td><td>Divi's Laboratories, Laurus Labs, Neuland Laboratories (India); Cambrex (US)</td></tr>
+            <tr><td>Pharmaceutical process chemistry — custom synthesis</td><td>CRO use: NMPA as a derivatization reagent and building block in multi-step API synthesis programs; allylation, acylation, and coupling chemistry documented</td><td>Syngene International, Jubilant Biosys, Charles River Labs (global)</td></tr>
+            <tr><td>Antihistamine / CNS drug scaffold research</td><td>N-methyl-4-methoxyphenylamine scaffold found in several drug candidates; research-stage applications</td><td>Academic pharma labs, biotech CROs</td></tr>
+          </table>
+          <div class="alert alert-warning" style="margin-top:12px;">⚠ Specific named APIs synthesized directly from NMPA are not publicly documented in detail — specific API linkage data is typically proprietary to pharmaceutical manufacturers. The above reflects general secondary amine intermediate usage. Source: <a href="https://www.nordmann.global/en/products/4-methoxy-n-methylaniline" target="_blank">Nordmann Global (distributor description)</a></div>
+          <br>
+          <strong style="font-size:12px;">Application Market Size — Pharmaceutical Intermediates (secondary aromatic amines)</strong>
+          <table style="margin-top:8px;">
+            <tr><th>Market Segment</th><th>Global Size</th><th>CAGR</th><th>Key Players</th><th>Source</th></tr>
+            <tr><td>Pharma Intermediates (global API value chain)</td><td>~USD 28B (2024) for pharma fine chemicals &amp; intermediates sector</td><td>~6–7%</td><td>Divi's Labs, Laurus Labs, Neuland, Cambrex, Lonza</td><td>General pharma intermediate market data</td></tr>
+            <tr><td>p-Anisidine pharma application share</td><td>~20% of p-Anisidine family demand is pharma-oriented (2024)</td><td>~6.2%</td><td>India pharma CDMOs, European API manufacturers</td><td><a href="https://www.reportsanddata.com/report-detail/p-anisidine-market" target="_blank">Reports and Data 2024</a></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3.3 -->
+      <div class="card">
+        <div class="card-header">3.3 — Agrochemical Intermediates</div>
+        <div class="card-body">
+          <p style="font-size:13px; line-height:1.7; margin-bottom:14px;">N-methyl-substituted anisidine derivatives (including NMPA) are used in agrochemical intermediate synthesis where a secondary amine functionality on a methoxyphenyl ring is required. The specialty amine segment of agrochemical synthesis represents a niche but high-value demand stream.</p>
+          <table>
+            <tr><th>Application</th><th>Specific Use</th><th>Key Companies</th></tr>
+            <tr><td>Herbicide / Fungicide intermediates</td><td>N-methyl-4-methoxyphenylamine scaffolds appear in synthesis pathways for certain herbicide and fungicide active ingredients; derivative chemistry</td><td>Bayer CropScience, Syngenta, BASF Crop Protection, PI Industries (India)</td></tr>
+            <tr><td>Specialty agrochemical building blocks</td><td>Custom synthesis of novel agrochemical intermediates for research programs; CRO agrochemical clients</td><td>PI Industries (India), Excel Industries (India), Corteva, FMC</td></tr>
+          </table>
+          <div class="alert alert-warning" style="margin-top:12px;">⚠ NMPA's role in agrochemicals is via derivative chemistry — it is a building block, not a direct active ingredient. Market contribution is indirect and niche. Source: <a href="https://www.ar-reagent.com/knowledge/supplement/p-anisidine-anisidine-4-aminoanisole-4-anisidine-anisidin-anisidine-structure-anisidine-value-meta-nitro-para-anisidine-n-methyl-p-anisidine-p-anisidin-p-anisidine-cas-p-anisidine-cas-no-p-anisidine-c.html" target="_blank">AR Reagent Chemical Blog</a></div>
+        </div>
+      </div>
+
+      <!-- 3.4 -->
+      <div class="card">
+        <div class="card-header">3.4 — Research, Reference Standards &amp; Organic Chemistry Building Block</div>
+        <div class="card-body">
+          <p style="font-size:13px; line-height:1.7; margin-bottom:14px;">NMPA appears in multiple commercial research chemical catalogs (Sigma-Aldrich, TCI Chemicals, Alfa Aesar, AChemBlock) as an organic building block. Research documented uses include: study of amine additive effects; allylation chemistry with quaternary allylammonium cations; coupling reactions in heterocyclic synthesis programs. Consistent demand from academic and industrial R&amp;D labs globally.</p>
+          <table>
+            <tr><th>Application</th><th>Specific Use</th><th>Key Buyers</th></tr>
+            <tr><td>Organic chemistry building block</td><td>Secondary aromatic amine building block for library synthesis, lead optimization, heterocyclic chemistry</td><td>Universities, biotech CROs, pharma R&amp;D labs globally</td></tr>
+            <tr><td>Amine chemistry research</td><td>Study of N-methylaniline reactivity, allylation, acylation reaction studies</td><td>Sigma-Aldrich catalog customers; Alfa Aesar customers</td></tr>
+            <tr><td>Reference standard supply</td><td>Analytical reference for quality control in p-Anisidine derivative manufacturing</td><td>QC labs at dye manufacturers, API intermediate producers</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 04 -->
+    <div class="section" id="s04">
+      <div class="section-header">
+        <div class="section-num">04</div>
+        <h2>Market <span>Analysis</span></h2>
+      </div>
+
+      <div class="alert alert-warning">⚠ <strong>Data Note:</strong> Dedicated market data for N-Methyl-p-anisidine (CAS 5961-59-1) specifically is very limited — no dedicated market report found. Analysis uses: (1) p-Anisidine family market data as primary proxy; (2) triangulation from supplier counts, pricing, and downstream application sizes. All NMPA-specific figures are estimates, clearly flagged.</div>
+
+      <!-- 4A -->
+      <div class="card">
+        <div class="card-header">4A — Global Market</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Metric</th><th>Value</th><th>Source</th></tr>
+            <tr><td>p-Anisidine family global market (2024)</td><td>USD 102–107 million (multiple report consensus)</td><td><a href="https://www.qyresearch.com/reports/5045149/p-anisidine" target="_blank">QYResearch 2025</a>; <a href="https://www.marketresearchreportstore.com/reports/1366994/p-anisidine" target="_blank">Global Info Research 2025</a></td></tr>
+            <tr><td>p-Anisidine family forecast (2031)</td><td>USD 142–145 million; CAGR 4.3–4.4%</td><td><a href="https://www.qyresearch.com/reports/5045149/p-anisidine" target="_blank">QYResearch 2025</a></td></tr>
+            <tr><td>NMPA specific market estimate</td><td>&lt; USD 5M (specialty/niche derivative segment) — proxy: NMPA accounts for estimated 3–5% of total p-Anisidine family market value based on supplier count and price premium vs p-Anisidine</td><td>Estimated — no dedicated public market report found for NMPA specifically</td></tr>
+            <tr><td>Key demand drivers</td><td>Azo dye manufacturing growth (especially disperse dyes for polyester); pharmaceutical API intermediate demand; agrochemical fine chemistry; steady R&amp;D consumption globally</td><td><a href="https://www.reportsanddata.com/report-detail/p-anisidine-market" target="_blank">Reports and Data 2024</a></td></tr>
+            <tr><td>Alternative market context</td><td>p-Anisidine market valued at USD 150M (2024) → USD 250M (2034) per some broader scope reports (includes all derivatives)</td><td><a href="https://www.reportsanddata.com/report-detail/p-anisidine-market" target="_blank">Reports and Data 2024 (broader scope)</a></td></tr>
+          </table>
+          <div class="alert alert-info" style="margin-top:12px;">ℹ️ Wide range in market estimates reflects different scope definitions — some reports cover p-Anisidine (parent) only; others include all N-alkyl derivatives including NMPA. The NMPA-specific market is niche but a premium-value segment within the broader family.</div>
+        </div>
+      </div>
+
+      <!-- 4B -->
+      <div class="card">
+        <div class="card-header">4B — 🇮🇳 India Market</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Metric</th><th>Assessment</th><th>Source</th></tr>
+            <tr class="india-row"><td>India domestic production of NMPA</td><td>Negligible to nil — not manufactured commercially in India specifically (as NMPA); depends on imports from China/Japan/USA</td><td>ChemicalBook supplier list; IndiaMart search (no NMPA-specific Indian manufacturers found)</td></tr>
+            <tr class="india-row"><td>India p-Anisidine production</td><td>India is a significant p-Anisidine producer — Aarti Industries (Vapi), Surya Life Sciences, Pravin Dyechem; exported globally. But N-methylation step to make NMPA not commercially done in India.</td><td><a href="https://www.aarti-industries.com/Products/chemical-products/chemistry/hydrogenation/-para-anisidine-(pa)" target="_blank">Aarti Industries product listing</a>; <a href="https://www.tradeindia.com/manufacturers/p-anisidine.html" target="_blank">TradeIndia supplier list</a></td></tr>
+            <tr class="india-row"><td>India pharma demand pull</td><td>Growing API synthesis sector; CDMOs (Divi's, Laurus, Syngene) increasingly sourcing specialty amine intermediates for custom synthesis. NMPA would serve pharma R&amp;D and custom synthesis pipelines.</td><td>India pharma CDMO market data; company annual reports</td></tr>
+            <tr class="india-row"><td>India dye industry demand</td><td>India is a major global dye manufacturer (Gujarat: Vapi, Ankleshwar cluster). Dye intermediates including secondary aromatic amines are procured domestically or imported. NMPA consumption exists but is captured in broader "specialty amines" import category.</td><td><a href="https://www.tradeindia.com/hyderabad/p-anisidine-city-196467.html" target="_blank">TradeIndia Dye Intermediate Suppliers</a></td></tr>
+            <tr class="india-row"><td>Key consuming clusters</td><td>Dyes/Pigments: Ankleshwar, Vapi (Gujarat) · Pharma intermediates: Hyderabad, Mumbai, Ahmedabad · Fine chemicals / CRO: Bengaluru, Pune, Mumbai</td><td>General India industry geography</td></tr>
+            <tr class="india-row"><td>India import dependency</td><td>~100% import dependent for NMPA currently; primarily sourced from China</td><td>Estimated based on zero domestic manufacturer listings found</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4C -->
+      <div class="card">
+        <div class="card-header">4C — Major Manufacturing Countries &amp; Supply Landscape</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Country</th><th>Role</th><th>Est. Share</th><th>Notes</th></tr>
+            <tr><td>🇨🇳 China</td><td class="sup-high">Dominant manufacturer &amp; exporter</td><td class="sup-high">~75–85%</td><td>Multiple Chinese manufacturers; production integrated with p-Anisidine supply chain; Ningxia Huayu, Lianyungang Taisheng, Cangzhou suppliers. Price competitive.</td></tr>
+            <tr><td>🇯🇵 Japan</td><td>Research/high-purity specialty grade</td><td>~5–8%</td><td>TCI Chemicals Japan (M1743 product); FUJIFILM Wako Pure Chemical (5961-59-1); high purity for pharma &amp; research use</td></tr>
+            <tr><td>🇺🇸 USA</td><td>Catalog/distribution; R&amp;D consumption</td><td>~5–8%</td><td>Sigma-Aldrich (Aldrich-180033 — sourced globally); Spectrum Chemical; Parchem; AChemBlock — catalog distributors, not domestic manufacturers</td></tr>
+            <tr><td>🇩🇪 Germany / EU</td><td>Distribution, pharma procurement</td><td>~3–5%</td><td>Nordmann Global (Hamburg) — distributor; ABCR GmbH — catalog; no major EU manufacturer identified</td></tr>
+            <tr class="india-row"><td>🇮🇳 India</td><td>Import dependent — zero domestic NMPA production</td><td>~0% → <strong>Opportunity</strong></td><td>India manufactures p-Anisidine (the precursor) but no commercial NMPA N-methylation identified. First-mover manufacturing opportunity exists.</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4D -->
+      <div class="card">
+        <div class="card-header">4D — Major Global Manufacturers &amp; Suppliers</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Company</th><th>Country</th><th>Role</th><th>Website</th></tr>
+            <tr><td>Sigma-Aldrich (Merck KGaA)</td><td>🇩🇪 Germany / 🇺🇸 USA</td><td>Catalog distributor — research grade (Aldrich-180033, 98%)</td><td><a href="https://www.sigmaaldrich.com/US/en/product/aldrich/180033" target="_blank">sigmaaldrich.com</a></td></tr>
+            <tr><td>TCI Chemicals</td><td>🇯🇵 Japan</td><td>Research/fine chemical manufacturer &amp; supplier (M1743, ≥96.0% GC)</td><td><a href="https://www.tcichemicals.com/US/en/p/M1743" target="_blank">tcichemicals.com</a></td></tr>
+            <tr><td>FUJIFILM Wako Pure Chemical</td><td>🇯🇵 Japan</td><td>Reagent manufacturer — research grade (catalogue 357-13771)</td><td><a href="https://labchem-wako.fujifilm.com/us/product/detail/W01W0235-1377.html" target="_blank">labchem-wako.fujifilm.com</a></td></tr>
+            <tr><td>Spectrum Chemical Mfg.</td><td>🇺🇸 USA</td><td>Fine chemical distributor — CAS 5961-59-1 catalog</td><td><a href="https://www.spectrumchemical.com/cas/5961-59-1" target="_blank">spectrumchemical.com</a></td></tr>
+            <tr><td>AChemBlock</td><td>🇺🇸 USA (China-sourced)</td><td>Building block supplier — 98% purity (W167898)</td><td><a href="https://www.achemblock.com/w167898-4-methoxy-n-methylaniline.html" target="_blank">achemblock.com</a></td></tr>
+            <tr><td>Parchem Fine &amp; Specialty Chemicals</td><td>🇺🇸 USA</td><td>Chemical distributor — N-Methyl-p-anisidine catalog</td><td><a href="https://www.parchem.com/chemical-supplier-distributor/n-methyl-p-anisidine-036131" target="_blank">parchem.com</a></td></tr>
+            <tr><td>Watson International Ltd.</td><td>🇨🇳 China</td><td>Chinese supplier / trader — CAS 5961-59-1 RFQ</td><td><a href="https://www.watson-int.com/n-methyl-p-anisidine-cas-5961-59-1/" target="_blank">watson-int.com</a></td></tr>
+            <tr><td>Nordmann Global</td><td>🇩🇪 Germany</td><td>Chemical distributor / trading company — listed as 4-methoxy-N-methylaniline supplier for pharma intermediates</td><td><a href="https://www.nordmann.global/en/products/4-methoxy-n-methylaniline" target="_blank">nordmann.global</a></td></tr>
+            <tr class="india-row"><td>Aarti Industries Ltd.</td><td>🇮🇳 India (Vapi, Gujarat)</td><td>Major p-Anisidine manufacturer — PRECURSOR ONLY (not NMPA directly) — strategic for vertical integration into NMPA</td><td><a href="https://www.aarti-industries.com/" target="_blank">aarti-industries.com</a></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 05 -->
+    <div class="section" id="s05">
+      <div class="section-header">
+        <div class="section-num">05</div>
+        <h2>Pricing <span>Intelligence</span></h2>
+      </div>
+
+      <div class="alert alert-warning">⚠ <strong>Price Data Note:</strong> NMPA is primarily sold at lab/research scale. Bulk commercial pricing requires direct RFQ. Prices below compiled from publicly listed catalog sources (June 2026). India landed cost must add import duty, GST, freight, and handling on top of FOB/CIF price.</div>
+
+      <div class="card">
+        <div class="card-header">Price by Quantity Scale</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Quantity Scale</th><th>Price Range (USD)</th><th>Approx. INR Equivalent</th><th>Grade</th><th>Source</th></tr>
+            <tr>
+              <td><strong>Small — Lab / Research</strong><br>(1–10 g)</td>
+              <td>USD 22–76/g (≥96–98% GC)<br>USD 452/g (≥97% Asreported specialty)</td>
+              <td>₹1,800–₹6,300/g (standard)<br>₹37,000/g (specialty grade)</td>
+              <td>≥96–98% GC</td>
+              <td><a href="https://www.tcichemicals.com/US/en/p/M1743" target="_blank">TCI M1743</a>; <a href="https://www.sigmaaldrich.com/US/en/product/aldrich/180033" target="_blank">Sigma-Aldrich 180033</a>; ChemicalBook listed prices 2026</td>
+            </tr>
+            <tr>
+              <td><strong>Medium — CRO / Pilot</strong><br>(100 g – 1 kg)</td>
+              <td>USD 300–800/kg (estimated; RFQ basis from Chinese suppliers)</td>
+              <td>₹25,000–₹66,000/kg</td>
+              <td>≥96–98% GC</td>
+              <td>Estimated from comparable N-methyl secondary aromatic amines; RFQ from Watson Int'l, ChemNet China required for actual price</td>
+            </tr>
+            <tr>
+              <td><strong>Large — Bulk Commercial</strong><br>(&gt;10 kg / MT)</td>
+              <td>USD 150–400/kg (estimated; very limited supply at MT scale)</td>
+              <td>₹12,500–₹33,000/kg</td>
+              <td>Technical / ≥95%</td>
+              <td>Proxy from p-Anisidine bulk pricing (~USD 20–40/kg) with 4–8× premium for N-methyl derivative specialty. <a href="https://www.qyresearch.com/reports/5045149/p-anisidine" target="_blank">QYResearch proxy</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Price Trend &amp; India Cost Factors</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Metric</th><th>Assessment</th></tr>
+            <tr><td>Trend Direction</td><td><strong style="color:#1565c0;">Stable to Slightly Increasing</strong> — driven by growing pharma intermediate demand; specialty premium maintained over commodity amines</td></tr>
+            <tr><td>Key Price Driver</td><td>Low manufacturing scale globally (niche product); China supply concentration; premium for secondary amine selectivity vs p-Anisidine; pharmaceutical grade purity uplift</td></tr>
+            <tr class="india-row"><td>India Import Cost Additions</td><td>Add ~20–30% on top of FOB China price: Basic Customs Duty (BCD) ~7.5%; Social Welfare Surcharge; IGST 18%; freight (sea/air); handling &amp; customs clearance. Effective landed cost multiplier ~1.3–1.5× FOB price.</td></tr>
+            <tr class="india-row"><td>Currency Risk</td><td>USD/INR fluctuation adds 5–10% price variability annually. NMPA imported at USD price — INR depreciation increases import cost directly. Hedge on forward contracts for larger orders where feasible.</td></tr>
+            <tr><td>p-Anisidine (precursor) benchmark</td><td>p-Anisidine bulk price: ~USD 15–30/kg from China (Aarti Industries, Ningxia Huayu). NMPA commands 5–15× premium at specialty scale. Bulk commercial NMPA production economics potentially viable if precursor cost advantage leveraged.</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 06 -->
+    <div class="section" id="s06">
+      <div class="section-header">
+        <div class="section-num">06</div>
+        <h2>Regulatory, Licensing &amp; <span>Compliance</span></h2>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Global Regulatory Table</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Country / Region</th><th>Regulatory Body</th><th>Classification</th><th>License / Permit Required</th><th>Key Restrictions</th><th>Source</th></tr>
+            <tr class="india-row">
+              <td>🇮🇳 INDIA</td>
+              <td>CPCB / State PCBs; DGFT; MoEFCC; BIS; CDSCO (if pharma supply)</td>
+              <td>Irritant / Harmful (GHS H302, H312, H315, H319, H332, H335); Not specifically scheduled or controlled under Narcotic Drugs Act or Schedule H/X; classified as hazardous chemical under MSIHC Rules 1989 (irritant class)</td>
+              <td>IEC (Import Export Code from DGFT) mandatory; Hazardous chemicals handling license under MSIHC Rules 1989 if above threshold quantities; Factory License under Factories Act for manufacturing; CDSCO Drug License if supplying for pharma use</td>
+              <td>SDS mandatory (GHS-aligned); PPE requirements (eyeshield, gloves, respirator); store in sealed containers, dark, inert atmosphere; no SCOMET restriction; aromatic amine class — handling SOPs required</td>
+              <td><a href="https://echa.europa.eu/substance-information/-/substanceinfo/100.025.214" target="_blank">ECHA C&amp;L</a>; <a href="https://www.mavenrs.com/blog/msihc-rules-india-hazardous-chemical-management-compliance-guide" target="_blank">MSIHC Rules India 2026</a></td>
+            </tr>
+            <tr>
+              <td>🇺🇸 USA</td>
+              <td>EPA (TSCA); FDA (if pharma); OSHA</td>
+              <td>On TSCA Inventory (chemical listed under Benzenamine, 4-methoxy-N-methyl-); GHS: Harmful if swallowed/inhaled/skin contact; irritant</td>
+              <td>TSCA compliance standard; FDA Drug Substance filing if used as API/intermediate in US-marketed drugs; No DEA controlled substance status</td>
+              <td>GHS SDS required; OSHA HazCom 2012 (GHS-aligned); NIOSH workplace controls for aromatic amines; no specific TSCA restriction rule identified</td>
+              <td><a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=5961-59-1&Units=SI" target="_blank">NIST WebBook</a>; EPA TSCA</td>
+            </tr>
+            <tr>
+              <td>🇪🇺 European Union</td>
+              <td>ECHA (REACH); CLP Regulation</td>
+              <td>On ECHA C&amp;L Inventory (pre-registration); CLP GHS07 — Warning signal word; H302+H312+H332 (harmful); H315 (skin irritant); H319 (eye irritant); H335 (respiratory irritant). No SVHC designation found.</td>
+              <td>REACH Pre-Registration on ECHA (confirmed); full REACH Registration required if importing/manufacturing &gt;1 tonne/year in EU; CLP notification to C&amp;L Inventory</td>
+              <td>No SVHC (Substance of Very High Concern) listing found; aromatic amine general REACH dossier required for commercial import; GHS-CLP labeling mandatory on EU supply</td>
+              <td><a href="https://echa.europa.eu/substance-information/-/substanceinfo/100.025.214" target="_blank">ECHA Substance Information (CAS 5961-59-1)</a></td>
+            </tr>
+            <tr>
+              <td>🇨🇳 China</td>
+              <td>MEE; MIIT; China NMPA (pharma)</td>
+              <td>Standard industrial chemical — subject to New Chemical Substances MEP Order 7 compliance; GHS-aligned classification</td>
+              <td>Chemical substance registration / notification if new to China inventory; standard import/export documentation; NMPA approval if pharma API in China-marketed drugs</td>
+              <td>China major producer — export regulations to monitor for trade policy risk; GBZ/CLP alignment SDS in Mandarin for China supply</td>
+              <td>General China chemical regulatory framework</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 Japan</td>
+              <td>METI; MHLW; ENCS/CSCL</td>
+              <td>Listed on ENCS inventory (existing chemical); aromatic amine class</td>
+              <td>CSCL compliance; Chemical Substances Control Law notification if new industrial use above threshold</td>
+              <td>PRTR reporting if used above threshold volumes; standard aromatic amine handling requirements</td>
+              <td>METI Japan chemical regulatory framework</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">🇮🇳 India Detailed Regulatory Sub-Section</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Requirement</th><th>Details</th></tr>
+            <tr class="india-row"><td>Manufacturing License</td><td>Factory License from State Factories Inspectorate; Environment Clearance (EC) under EIA Notification if above threshold production; Consent to Establish &amp; Consent to Operate (CTE/CTO) from State PCB required for manufacturing unit</td></tr>
+            <tr class="india-row"><td>Import Permission</td><td>IEC (Import Export Code from DGFT) mandatory; No specific NOC required for NMPA (non-scheduled, non-controlled chemical); DGFT policy: Free to Import under ITC-HS 2921 42 90; Basic Customs Duty + IGST 18% applicable; Phytosanitary/SDS documentation required</td></tr>
+            <tr class="india-row"><td>Export Permission</td><td>IEC + Export Declaration; No SCOMET (Strategic Goods) restriction expected — NMPA is not a dual-use chemical; DGFT notification compliance; export benefits (RODTEP) potentially applicable</td></tr>
+            <tr class="india-row"><td>Storage &amp; Handling</td><td>MSIHC Rules 1989 compliance mandatory (aromatic amine — irritant/harmful classification); SDS mandatory; store in sealed containers, inert atmosphere, dark, cool; PPE: safety goggles, chemical-resistant gloves (nitrile), respirator where vapors possible; GHS labeling on all containers</td></tr>
+            <tr class="india-row"><td>Pharma Supply Requirements</td><td>If sold as API intermediate to licensed pharma manufacturers: CDSCO Drug License applicable for storage/supply; GMP compliance under Schedule M for the supplying entity; CoA with full specification required; batch traceability documentation</td></tr>
+            <tr class="india-row"><td>Environmental Compliance</td><td>Aromatic amine class — PCB (Pollution Control Board) consent required for manufacturing; ETP (Effluent Treatment Plant) required if manufacturing; MSIHC compliance for hazardous chemical handling above threshold</td></tr>
+          </table>
+          <div class="alert alert-success" style="margin-top:14px;">✅ <strong>India Regulatory Summary:</strong> N-Methyl-p-anisidine is NOT a controlled/scheduled drug, narcotic, or restricted chemical in India. It can be legally imported, stored, and traded with standard registrations: IEC + GST + Factory License. For pharmaceutical supply to licensed pharma manufacturers, a CDSCO Drug License and GMP compliance are additionally required. No NOC or special import license needed. Regulatory barrier is LOW for import and domestic trading.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 07 -->
+    <div class="section" id="s07">
+      <div class="section-header">
+        <div class="section-num">07</div>
+        <h2>Potential Customers &amp; <span>Target Companies</span></h2>
+      </div>
+
+      <!-- 7A -->
+      <div class="card">
+        <div class="card-header">7A — Indian Target Companies</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Company</th><th>Segment</th><th>Location</th><th>Why a Target (Specific Rationale)</th><th>Website</th></tr>
+            <tr class="india-row"><td>Aarti Industries Ltd.</td><td>Specialty Chemicals / Dye Intermediates</td><td>Vapi, Gujarat</td><td>India's largest p-Anisidine manufacturer — NMPA is the N-methyl derivative. Aarti is both a potential raw material supplier AND a potential customer for NMPA supply to their own downstream customers who need the N-methyl variant. Natural first conversation partner.</td><td><a href="https://www.aarti-industries.com/" target="_blank">aarti-industries.com</a></td></tr>
+            <tr><td>Kolorjet Chemicals Pvt. Ltd.</td><td>Dye Intermediates / Specialty Dyes</td><td>Ankleshwar, Gujarat</td><td>Active dye intermediate manufacturer and supplier in Gujarat cluster. Uses aromatic amines including p-Anisidine derivatives. Direct potential buyer for NMPA for azo dye synthesis programs.</td><td><a href="https://kolorjet.com/" target="_blank">kolorjet.com</a></td></tr>
+            <tr><td>Sudarshan Chemical Industries</td><td>Pigments / Dyes</td><td>Pune, Maharashtra</td><td>India's largest organic pigment manufacturer; produces azo pigments requiring specialty amine intermediates. NMPA as secondary amine coupling component in pigment chemistry programs.</td><td><a href="https://www.sudarshan.com/" target="_blank">sudarshan.com</a></td></tr>
+            <tr><td>Atul Ltd.</td><td>Dye Intermediates / Specialty Chemicals</td><td>Valsad, Gujarat</td><td>Integrated specialty chemicals company with significant dye intermediate manufacturing. Wide product range of aromatic amines and dye intermediates — NMPA fits their portfolio as a specialty N-alkyl aniline derivative.</td><td><a href="https://www.atul.co.in/" target="_blank">atul.co.in</a></td></tr>
+            <tr><td>Divi's Laboratories Ltd.</td><td>API / Pharma CDMO</td><td>Hyderabad, Telangana</td><td>Major API and CDMO with extensive amine chemistry capabilities. Produces APIs requiring secondary aromatic amine building blocks. NMPA would be evaluated for custom synthesis programs requiring the 4-methoxy-N-methylphenylamine skeleton.</td><td><a href="https://www.divislabs.com/" target="_blank">divislabs.com</a></td></tr>
+            <tr><td>Laurus Labs Ltd.</td><td>API / Pharma CDMO</td><td>Hyderabad, Telangana</td><td>Growing CDMO with specialty intermediate synthesis capability. Active in amine-based API chemistry. Potential buyer for NMPA as building block in custom synthesis and generic API programs.</td><td><a href="https://www.lauruslabs.com/" target="_blank">lauruslabs.com</a></td></tr>
+            <tr><td>Syngene International Ltd.</td><td>Contract Research / CDMO</td><td>Bengaluru, Karnataka</td><td>Largest CRO/CDMO in India. Procures specialty intermediates including unusual secondary amines for pharma client projects. NMPA would be sourced for organic synthesis library building and lead optimization programs.</td><td><a href="https://www.syngeneintl.com/" target="_blank">syngeneintl.com</a></td></tr>
+            <tr><td>Pravin Dyechem Pvt. Ltd.</td><td>Dye Intermediates</td><td>Pardi, Gujarat</td><td>Active supplier-manufacturer of p-Anisidine and related dye intermediates. Would be a key customer / competitor to benchmark. Potential customer for NMPA to complete their intermediate portfolio.</td><td>IndiaMART listed</td></tr>
+            <tr><td>Excel Industries Ltd.</td><td>Agrochemicals / Specialty Chemicals</td><td>Mumbai / Roha, Maharashtra</td><td>Specialty chemicals company with agrochemical intermediates portfolio. Secondary amine building blocks for agrochemical programs — NMPA potential demand for novel herbicide/fungicide synthesis programs.</td><td><a href="https://www.excelind.co.in/" target="_blank">excelind.co.in</a></td></tr>
+            <tr><td>PI Industries Ltd.</td><td>Agrochemicals / Custom Synthesis</td><td>Gurugram, Haryana</td><td>Leading agrochemical and custom synthesis company. Significant CSM (Custom Synthesis &amp; Manufacturing) division working on novel agrochemical intermediates for global innovators. NMPA-type secondary amines required for heterocyclic and coupling chemistry in crop protection programs.</td><td><a href="https://www.piindustries.com/" target="_blank">piindustries.com</a></td></tr>
+            <tr><td>Jubilant Biosys / Jubilant Pharmova</td><td>Pharma CDMO / Drug Discovery</td><td>Noida / Nanjangud, Karnataka</td><td>CDMO with drug discovery and API synthesis arms. Uses aromatic amine building blocks in medicinal chemistry programs. NMPA as specialty building block for library synthesis.</td><td><a href="https://www.jubilantbiosys.com/" target="_blank">jubilantbiosys.com</a></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 7B -->
+      <div class="card">
+        <div class="card-header">7B — Global Target Companies</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Company</th><th>Country</th><th>Segment</th><th>Why a Target</th></tr>
+            <tr><td>Huntsman Textile Effects</td><td>🇺🇸 USA / 🇸🇬 Singapore</td><td>Specialty Dyes &amp; Chemicals</td><td>Major global disperse dye and specialty colorant manufacturer; uses secondary aromatic amine intermediates including N-methyl aniline derivatives for polyester dye synthesis programs</td></tr>
+            <tr><td>Archroma (formerly Clariant Textile)</td><td>🇨🇭 Switzerland</td><td>Textile Dyes &amp; Specialty Chemicals</td><td>Global specialty textile dye company; procures dye intermediates including N-alkyl aromatic amines for azo and disperse dye manufacturing</td></tr>
+            <tr><td>DyStar Group</td><td>🇩🇪 Germany / 🇸🇬 Singapore</td><td>Textile Dyes</td><td>One of the world's largest dye manufacturers; extensive use of secondary aromatic amine dye intermediates including N-substituted anisidine derivatives</td></tr>
+            <tr><td>Bayer CropScience (Crop Science Division)</td><td>🇩🇪 Germany</td><td>Agrochemicals</td><td>Major global crop protection company; uses secondary N-methyl aniline derivatives in fungicide and herbicide synthesis programs</td></tr>
+            <tr><td>BASF SE</td><td>🇩🇪 Germany</td><td>Agrochemicals / Specialty Chemicals / Dyes</td><td>World's largest chemical company; multiple business units (Performance Chemicals, Crop Science, Coatings) potentially consume secondary aromatic amine building blocks including NMPA</td></tr>
+            <tr><td>Cambrex Corporation</td><td>🇺🇸 USA</td><td>Pharma API Manufacturing / CDMO</td><td>Major global pharma CDMO; procures specialty amine building blocks for custom API synthesis programs; potential buyer for NMPA in small-medium quantities for client projects</td></tr>
+            <tr><td>Sun Chemical (DIC Group)</td><td>🇺🇸 USA / 🇯🇵 Japan</td><td>Printing Inks &amp; Pigments</td><td>World's largest producer of printing inks and pigments; uses specialty aromatic amines including N-methyl derivatives in pigment and ink colorant synthesis</td></tr>
+            <tr><td>Lonza Group</td><td>🇨🇭 Switzerland</td><td>Pharma CDMO / Specialty Chemicals</td><td>Global pharma CDMO and specialty chemicals supplier; procures fine chemical building blocks including specialty amines for custom pharmaceutical synthesis and chemical process development</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 08 -->
+    <div class="section" id="s08">
+      <div class="section-header">
+        <div class="section-num">08</div>
+        <h2>Strategic Business <span>Frameworks</span></h2>
+      </div>
+
+      <!-- SWOT -->
+      <div class="card">
+        <div class="card-header">8A — SWOT Analysis</div>
+        <div class="card-body">
+          <div class="swot-grid">
+            <div class="swot-q swot-s">
+              <h4>💪 STRENGTHS</h4>
+              <ul>
+                <li>India is a major p-Anisidine (precursor) manufacturer — Aarti Industries, Surya Life Sciences — feedstock cost advantage</li>
+                <li>Company spans import-export, CRO, trading — multiple entry modes available without large capex</li>
+                <li>Low regulatory barrier for import &amp; domestic trade (no controlled substance)</li>
+                <li>No Indian NMPA competitor currently — clear first-mover advantage in domestic supply</li>
+                <li>Established chemistry and dye intermediate networks in India (Gujarat, Hyderabad)</li>
+              </ul>
+            </div>
+            <div class="swot-q swot-w">
+              <h4>⚠ WEAKNESSES</h4>
+              <ul>
+                <li>Zero domestic manufacturing base — import-dependent initially from China-dominated supply</li>
+                <li>Niche product — small immediate market limits early revenue potential</li>
+                <li>Very limited trade data makes demand sizing difficult and requires customer-led validation</li>
+                <li>Aromatic amine handling requires SDS, PPE protocols — modest compliance overhead</li>
+                <li>Secondary amine selectivity in synthesis adds manufacturing complexity (over-methylation risk)</li>
+              </ul>
+            </div>
+            <div class="swot-q swot-o">
+              <h4>🚀 OPPORTUNITIES</h4>
+              <ul>
+                <li>India dye industry (Ankleshwar, Vapi) actively sources specialty amine intermediates — no dedicated domestic NMPA supplier</li>
+                <li>India pharma CDMO sector growing at 10%+ — upstream specialty amine demand increasing</li>
+                <li>Integration opportunity: buy p-Anisidine from Aarti → N-methylate → sell NMPA at 5–15× value uplift</li>
+                <li>Export opportunity: Japan and EU pharma/dye companies seeking non-China supply alternatives</li>
+                <li>Agrochemical sector (PI Industries, Excel) custom synthesis programs — specialty amine sourcing need</li>
+              </ul>
+            </div>
+            <div class="swot-q swot-t">
+              <h4>⚡ THREATS</h4>
+              <ul>
+                <li>China dominates supply (75–85%) with aggressive pricing — direct price competition risk</li>
+                <li>China export policy changes could disrupt supply chain unpredictably</li>
+                <li>Small niche — demand development timeline may be slow (pharma qualification cycles 6–18 months)</li>
+                <li>Aromatic amines face regulatory tightening trend globally (REACH scrutiny on amine class)</li>
+                <li>p-Anisidine parent chemical already well-sourced by India dye manufacturers — switching to N-methyl variant requires specific customer need</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTER -->
+      <div class="card">
+        <div class="card-header">8B — Porter's Five Forces</div>
+        <div class="card-body">
+          <div class="porter-grid">
+            <div class="porter-card porter-medium">
+              <h4>Competitive Rivalry</h4>
+              <div class="intensity">● MEDIUM</div>
+              <p>Supply concentrated in China but limited number of producers globally. Virtually no Indian domestic competitor. Price competition from Chinese bulk suppliers is a risk but quality/reliability differentiation possible.</p>
+            </div>
+            <div class="porter-card porter-medium">
+              <h4>Threat of New Entrants</h4>
+              <div class="intensity">● MEDIUM</div>
+              <p>Synthesis (N-methylation of p-Anisidine) is known chemistry — technical barrier is moderate. Capital requirement is manageable. Chinese manufacturers can scale quickly. India entry feasible via import-first then manufacture pathway.</p>
+            </div>
+            <div class="porter-card porter-high">
+              <h4>Bargaining Power of Suppliers</h4>
+              <div class="intensity">● HIGH</div>
+              <p>Supply highly concentrated in China (75–85%). Very few alternative global sources at commercial scale. China export policy is an active risk factor. Price setting power rests with Chinese producers currently.</p>
+            </div>
+            <div class="porter-card porter-low">
+              <h4>Bargaining Power of Buyers</h4>
+              <div class="intensity">● LOW–MEDIUM</div>
+              <p>Pharma buyers need specific purity and documentation — limited substitution for NMPA specifically. Dye manufacturers have more substitution options. Research buyers are price-sensitive but small volume. Overall buyer power moderate to low.</p>
+            </div>
+            <div class="porter-card porter-low">
+              <h4>Threat of Substitutes</h4>
+              <div class="intensity">● LOW</div>
+              <p>For specific applications requiring N-methyl-4-methoxyphenylamine skeleton, p-Anisidine (primary amine) is NOT a direct substitute — the N-methyl group is chemically distinct. Substitution requires reformulation by customer — high switching cost.</p>
+            </div>
+            <div class="porter-card porter-medium">
+              <h4>Overall Attractiveness</h4>
+              <div class="intensity">● MODERATE</div>
+              <p>Niche specialty chemical with clear application pull. India first-mover advantage. Favorable for a company with chemical trading expertise and dye/pharma relationships. Main risk: China supply concentration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PESTLE -->
+      <div class="card">
+        <div class="card-header">8C — PESTLE Analysis</div>
+        <div class="card-body">
+          <div class="pestle-grid">
+            <div class="pestle-card">
+              <h4>🏛 Political</h4>
+              <ul>
+                <li>India "Make in India" / Aatmanirbhar Bharat incentivizes domestic specialty chemical production</li>
+                <li>China-India trade tensions add supply chain risk — diversification from China supply is strategic imperative</li>
+                <li>DGFT import policies stable for non-controlled chemicals — favorable for trading</li>
+                <li>PLI schemes for pharma and specialty chemicals support downstream NMPA demand</li>
+              </ul>
+            </div>
+            <div class="pestle-card">
+              <h4>📊 Economic</h4>
+              <ul>
+                <li>India specialty chemicals market growing ~10% CAGR — strong domestic demand expansion</li>
+                <li>INR/USD volatility adds import cost unpredictability — hedge strategy needed</li>
+                <li>India dye &amp; pigment exports growing — upstream intermediate demand increasing</li>
+                <li>India CDMO sector attracting global pharma investment — specialty chemical sourcing demand rising</li>
+              </ul>
+            </div>
+            <div class="pestle-card">
+              <h4>👥 Social</h4>
+              <ul>
+                <li>Growing textile industry in Asia — sustained dye intermediate demand</li>
+                <li>Increased focus on drug affordability — generic API expansion drives upstream intermediate sourcing</li>
+                <li>ESG awareness increasing — aromatic amine class under sustainability scrutiny (worker safety, environmental impact)</li>
+              </ul>
+            </div>
+            <div class="pestle-card">
+              <h4>🔬 Technological</h4>
+              <ul>
+                <li>Green chemistry routes for N-methylation (reductive amination with biomass-derived formaldehyde) gaining research attention</li>
+                <li>Flow chemistry / continuous manufacturing could enable smaller-scale, cost-efficient NMPA production</li>
+                <li>AI-driven drug discovery increasing demand for specialty amine building blocks in pharma libraries</li>
+              </ul>
+            </div>
+            <div class="pestle-card">
+              <h4>⚖️ Legal &amp; Regulatory</h4>
+              <ul>
+                <li>No Schedule H/X control in India — simplifies import and trade</li>
+                <li>EU REACH pre-registration confirmed (ECHA listing) — full registration needed if &gt;1 MT/year import to EU</li>
+                <li>GMP compliance essential for pharma supply — adds cost but creates premium market access</li>
+                <li>Aromatic amines class facing increasing REACH/EPA scrutiny globally — monitor regulatory evolution</li>
+              </ul>
+            </div>
+            <div class="pestle-card">
+              <h4>🌿 Environmental</h4>
+              <ul>
+                <li>Aromatic amine manufacturing requires ETP (Effluent Treatment) — manufacturing capex consideration</li>
+                <li>Leuckart-Wallach route relatively benign vs dimethyl sulfate route (prefer formaldehyde/formic acid approach)</li>
+                <li>Azo dye environmental regulation in EU (banned azo amines list) — NMPA itself is NOT on banned list; monitor downstream azo product regulations</li>
+                <li>PCB consent required for any India manufacturing — standard regulatory pathway</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BCG -->
+      <div class="card">
+        <div class="card-header">8D — BCG Matrix</div>
+        <div class="card-body">
+          <div class="bcg-grid">
+            <div class="bcg-q bcg-star">
+              <h4>⭐ STAR</h4>
+              <p>p-Anisidine (parent amine) — established global market USD 102M+; steady growth 4.4% CAGR; multiple application drivers; India already manufactures (Aarti). High share, high growth.</p>
+            </div>
+            <div class="bcg-q bcg-qm">
+              <h4>❓ QUESTION MARK — OUR POSITION</h4>
+              <p><strong>N-Methyl-p-anisidine (NMPA)</strong> — HIGH GROWTH end markets (pharma CDMO, specialty dyes) but LOW current market share in India (zero domestic supply). Investment required to move to Star. Viable if anchor dye/pharma customers secured. Strategic potential is high.</p>
+            </div>
+            <div class="bcg-q bcg-cow">
+              <h4>🐄 CASH COW</h4>
+              <p>Standard commodity dye intermediates (aniline, p-toluidine, etc.) — stable but low growth; mature market; volume business. Our existing portfolio likely includes these.</p>
+            </div>
+            <div class="bcg-q bcg-dog">
+              <h4>🐕 DOG</h4>
+              <p>o-Anisidine (more toxic isomer) — declining use as global regulators tighten aromatic amine restrictions; limited new applications; avoid entering this isomer.</p>
+            </div>
+          </div>
+          <p style="font-size:12px; color:#444; margin-top:12px;">NMPA is a <strong>Question Mark</strong> — high-growth downstream applications (pharma CDMOs, specialty dyes) but currently no India domestic presence. Strategic decision: invest to move toward "Star" position. The investment case is warranted given India's p-Anisidine manufacturing base as a feedstock advantage.</p>
+        </div>
+      </div>
+
+      <!-- ANSOFF -->
+      <div class="card">
+        <div class="card-header">8E — Ansoff Matrix — Recommended Strategy</div>
+        <div class="card-body">
+          <div class="ansoff-grid">
+            <div class="ansoff-card">
+              <h4>Market Penetration</h4>
+              <span class="tag tag-na">Not Applicable</span>
+              <p>No current presence in NMPA — cannot penetrate a market we are not yet in. Skip this quadrant.</p>
+            </div>
+            <div class="ansoff-card">
+              <h4>✅ Market Development</h4>
+              <span class="tag tag-rec">Recommended — Immediate</span>
+              <p>Leverage existing relationships in India's dye intermediate and pharma sectors to introduce NMPA as a new specialty product. Source from China/Japan initially, supply to established customers. Lowest-risk entry strategy with fastest revenue realization.</p>
+            </div>
+            <div class="ansoff-card">
+              <h4>✅ Product Development</h4>
+              <span class="tag tag-lt">Recommended — Medium-term</span>
+              <p>Develop India-manufactured NMPA via Leuckart-Wallach N-methylation using domestic p-Anisidine from Aarti Industries. Creates cost-advantaged, "Made in India" product for domestic and export markets. Requires modest capex and process chemistry capability.</p>
+            </div>
+            <div class="ansoff-card">
+              <h4>Diversification</h4>
+              <span class="tag tag-caut">Long-term / Cautious</span>
+              <p>New product + new market (e.g., NMPA-based dye derivatives, or new geographic export markets outside India). Consider only after NMPA supply credibility and customer base are firmly established — 3–5 years horizon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VALUE CHAIN -->
+      <div class="card">
+        <div class="card-header">8F — Value Chain Analysis</div>
+        <div class="card-body">
+          <div class="vc-row">
+            <div class="vc-step vc-active">Raw Material (p-Anisidine)</div>
+            <div class="vc-step vc-active">N-Methylation Manufacturing (Medium-term)</div>
+            <div class="vc-step vc-active">Sourcing &amp; Import (Immediate)</div>
+            <div class="vc-step vc-active">Quality Testing &amp; CRO Supply</div>
+            <div class="vc-step vc-active">Domestic Distribution</div>
+            <div class="vc-step vc-active">Export</div>
+            <div class="vc-step vc-inactive">End Customer (Dye / Pharma)</div>
+          </div>
+          <p style="font-size:11px; color:#777; margin-bottom:12px;">Blue = Recommended participation stages | Gray = Customer territory</p>
+          <table>
+            <tr><th>Stage</th><th>Opportunity</th><th>Timeline</th></tr>
+            <tr class="india-row"><td>Raw Material (p-Anisidine)</td><td>Partner with Aarti Industries / Pravin Dyechem for domestic p-Anisidine at competitive price — feedstock for future manufacturing</td><td>Immediate (relationship-building)</td></tr>
+            <tr><td>Sourcing &amp; Import</td><td>Source NMPA from 2–3 qualified Chinese/Japanese suppliers (TCI Japan, Watson International China); maintain quality-assured supply chain to Indian customers</td><td>Immediate (Month 1–3)</td></tr>
+            <tr><td>Quality Testing</td><td>Establish in-house or partnered GC purity testing, CoA generation, MSDS documentation — critical for pharma customer supply</td><td>Month 1–4</td></tr>
+            <tr><td>Domestic Distribution</td><td>Supply to India dye intermediates cluster (Gujarat), pharma CDMO cluster (Hyderabad, Bengaluru), and research chemical customers</td><td>Month 3–6</td></tr>
+            <tr><td>Export</td><td>Re-export to SE Asia, Middle East, or direct export to EU/Japan pharma seeking non-China alternatives for specialty amines</td><td>Month 6–18 (opportunistic)</td></tr>
+            <tr class="india-row"><td>Manufacturing</td><td>Leuckart-Wallach N-methylation of domestic p-Anisidine — India-made NMPA at cost advantage; target 100–500 kg/month pilot scale initially</td><td>Medium-term (12–30 months)</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 09 -->
+    <div class="section" id="s09">
+      <div class="section-header">
+        <div class="section-num">09</div>
+        <h2>Feasibility Summary &amp; <span>Recommendation</span></h2>
+      </div>
+
+      <div class="verdict">
+        <div class="vtag">Overall Feasibility Verdict</div>
+        <h3>✅ CONDITIONAL — Recommended for Phased Entry</h3>
+        <p>N-Methyl-p-anisidine is a commercially viable specialty chemical with clear demand pull in India's dye intermediate cluster (Gujarat), pharma CDMO sector (Hyderabad, Bengaluru), and agrochemical/fine chemistry programs. India has zero domestic NMPA production, creating a first-mover opportunity. The parent p-Anisidine is manufactured domestically (Aarti Industries), enabling an eventual India manufacturing story. The immediate strategy — import and distribute to qualified anchor customers — carries low capital risk and can generate revenue quickly. The conditional flag reflects: (1) small niche market with revenue ceiling; (2) China supply concentration risk; (3) demand validation timeline for pharma customers (6–18 months qualification). Entry is warranted if 3–5 initial customer commitments can be secured.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Recommended Business Mode (Priority Order)</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Mode</th><th>Recommendation</th><th>Rationale</th></tr>
+            <tr><td>🔵 Import &amp; Domestic Trading</td><td><span class="mode-go">✅ Start Immediately</span></td><td>Lowest capital requirement; test demand with India dye and pharma customers; establish supply chain with 2–3 Chinese/Japanese suppliers; fastest path to first revenue</td></tr>
+            <tr><td>🔵 Sourcing &amp; Marketing</td><td><span class="mode-go">✅ Start Immediately</span></td><td>Identify 3–5 anchor customers (Sudarshan Chemical, Kolorjet, Syngene, Laurus Labs, PI Industries); supply on RFQ basis; build market reputation as reliable India NMPA supplier</td></tr>
+            <tr><td>🟡 CRO / R&amp;D Support</td><td><span class="mode-opp">✅ Short-term</span></td><td>Supply ≥98% research grade NMPA with full CoA and SDS to pharma R&amp;D and CRO customers; premium price segment; builds relationships for scale-up orders</td></tr>
+            <tr><td>🟡 Export</td><td><span class="mode-opp">⚡ Opportunistic</span></td><td>If sourcing at competitive rates, re-export to SE Asia or supply Japan/EU pharma seeking non-China NMPA alternatives; requires quality documentation (CoA, MSDS, REACH pre-registration)</td></tr>
+            <tr><td>🔴 Manufacturing (India)</td><td><span class="mode-long">⏳ Medium-term (12–30 months)</span></td><td>N-methylation of domestic p-Anisidine via Leuckart-Wallach route; requires pilot plant setup (~₹50–100L capex estimate), process chemistry expertise, PCB consent; viable only after customer base validated</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Key Risks to Monitor</div>
+        <div class="card-body">
+          <table>
+            <tr><th>Risk</th><th>Level</th><th>Mitigation</th></tr>
+            <tr><td>China supply concentration (~75–85% of global NMPA supply)</td><td><span class="risk-h">HIGH</span></td><td>Qualify 2–3 suppliers (China + Japan); maintain safety stock; monitor China chemical export restrictions quarterly; explore India manufacturing as long-term hedge</td></tr>
+            <tr><td>Small niche market — revenue ceiling limits scale</td><td><span class="risk-m">MEDIUM</span></td><td>Position as high-margin specialty play; target pharma CRO segment (higher price tolerance); expand product basket to adjacent specialty amines simultaneously</td></tr>
+            <tr><td>Pharma customer qualification timeline (6–18 months)</td><td><span class="risk-m">MEDIUM</span></td><td>Start with dye intermediate and research grade customers (faster qualification); build pharma customer relationships in parallel; front-load CRO/R&amp;D supply to establish pharma network</td></tr>
+            <tr><td>Aromatic amine handling / safety compliance</td><td><span class="risk-m">MEDIUM</span></td><td>Invest in proper PPE, SDS documentation, GHS labeling, and employee training before first import; consult EHS professional; ensure storage facility meets MSIHC requirements</td></tr>
+            <tr><td>Over-methylation in synthesis (if manufacturing)</td><td><span class="risk-m">MEDIUM (manufacturing stage)</span></td><td>Hire experienced process chemist; use formaldehyde/formic acid (Leuckart) route with controlled stoichiometry; rigorous GC purity testing post-synthesis</td></tr>
+            <tr><td>Regulatory tightening on aromatic amine class (REACH / EU)</td><td><span class="risk-m">MEDIUM</span></td><td>Monitor ECHA regulatory updates quarterly; ensure downstream azo dye customers use NMPA in compliant applications; maintain SDS aligned with latest GHS revision</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Suggested Next Steps</div>
+        <div class="card-body">
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>Customer Validation (Month 1–2)</h4>
+                <p>Approach 5–8 India target companies: Sudarshan Chemical, Kolorjet Chemicals, Syngene International, Laurus Labs, PI Industries, and Aarti Industries (competitor &amp; potential partner discussion). Assess NMPA requirements, quantities, purity specifications, and RFQ interest.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>Supplier Qualification (Month 1–3)</h4>
+                <p>Identify and qualify 2–3 suppliers: TCI Chemicals Japan (research grade); Watson International China (bulk RFQ); 1 additional Chinese producer from ChemNet / Alibaba CHEM. Obtain CoA, MSDS, GC purity certificates, lead times, and competitive pricing for 1–10 kg trial and 10–50 kg pilot quantities.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>Compliance Setup (Month 2–4)</h4>
+                <p>Register for IEC (if not existing); obtain GST registration for chemical trading; prepare GHS-aligned SDS for NMPA; establish proper chemical storage (sealed, dark, cool, inert atmosphere per MSIHC guidelines); consult EHS professional on aromatic amine handling protocol; brief warehouse team on PPE requirements.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h4>Trial Import &amp; First Customer Supply (Month 3–6)</h4>
+                <p>Place trial import of 1–5 kg from 2 suppliers; conduct in-house or partnered GC purity testing; supply to 2–3 anchor customers with full CoA and SDS; collect customer feedback on purity, delivery timeline, and documentation. Aim for first repeat order within 90 days of first supply.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <h4>Market Development &amp; Portfolio Expansion (Month 6–12)</h4>
+                <p>Attend CPhI India and DyeChem India exhibitions; list NMPA in specialty chemical directories (IndiaMart, TradeIndia, specialty pharma intermediate portals); expand customer base to 8–12 qualified customers; evaluate addition of adjacent products (o-Anisidine HCl, N,N-dimethyl-p-anisidine) to broaden product basket and amortize marketing investment.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">6</div>
+              <div class="step-content">
+                <h4>India Manufacturing Feasibility Study (Month 9–18)</h4>
+                <p>Commission technical feasibility study on Leuckart-Wallach N-methylation of domestic p-Anisidine (source from Aarti Industries); engage process chemistry consultant or IIT/CSIR lab; estimate capex for 100–500 kg/month pilot batch production; model IRR vs. continued import strategy; trigger manufacturing decision at Month 18 based on validated customer pipeline and IRR analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div class="section" id="s10">
+      <div class="section-header">
+        <div class="section-num">10</div>
+        <h2>Sources &amp; <span>References</span></h2>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <ul class="refs-list">
+            <li>PubChem — N-Methyl-4-anisidine, CID 22250 | National Library of Medicine, NIH | <a href="https://pubchem.ncbi.nlm.nih.gov/compound/22250" target="_blank">pubchem.ncbi.nlm.nih.gov/compound/22250</a></li>
+            <li>ChemicalBook — N-METHYL-P-ANISIDINE (CAS 5961-59-1) | Properties, Suppliers, Pricing | <a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4340355.htm" target="_blank">chemicalbook.com</a></li>
+            <li>TCI Chemicals USA — N-Methyl-p-anisidine, Product M1743, ≥96.0% GC | <a href="https://www.tcichemicals.com/US/en/p/M1743" target="_blank">tcichemicals.com/US/en/p/M1743</a></li>
+            <li>Sigma-Aldrich / Merck — 4-Methoxy-N-methylaniline 98%, Aldrich-180033 | <a href="https://www.sigmaaldrich.com/US/en/product/aldrich/180033" target="_blank">sigmaaldrich.com</a></li>
+            <li>NIST WebBook — Benzenamine, 4-methoxy-N-methyl- (CAS 5961-59-1) | NIST Standard Reference Database 69 | <a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=5961-59-1&Units=SI" target="_blank">webbook.nist.gov</a></li>
+            <li>ECHA — N-methyl-4-anisidine Substance Information | European Chemicals Agency | <a href="https://echa.europa.eu/substance-information/-/substanceinfo/100.025.214" target="_blank">echa.europa.eu</a></li>
+            <li>FUJIFILM Wako Pure Chemical — N-Methyl-p-anisidine reagent (357-13771) | <a href="https://labchem-wako.fujifilm.com/us/product/detail/W01W0235-1377.html" target="_blank">labchem-wako.fujifilm.com</a></li>
+            <li>Nordmann Global — 4-methoxy-N-methylaniline (CAS 5961-59-1) as pharma intermediate | Hamburg, Germany | <a href="https://www.nordmann.global/en/products/4-methoxy-n-methylaniline" target="_blank">nordmann.global</a></li>
+            <li>Spectrum Chemical — CAS 5961-59-1 N-Methyl-p-anisidine product listing | <a href="https://www.spectrumchemical.com/cas/5961-59-1" target="_blank">spectrumchemical.com</a></li>
+            <li>AChemBlock — 4-Methoxy-N-methylaniline 98%, W167898 | <a href="https://www.achemblock.com/w167898-4-methoxy-n-methylaniline.html" target="_blank">achemblock.com</a></li>
+            <li>Parchem — N-Methyl-p-anisidine Chemical Supplier Distributor | <a href="https://www.parchem.com/chemical-supplier-distributor/n-methyl-p-anisidine-036131" target="_blank">parchem.com</a></li>
+            <li>Watson International Ltd. — N-METHYL-P-ANISIDINE CAS 5961-59-1 China Supplier | <a href="https://www.watson-int.com/n-methyl-p-anisidine-cas-5961-59-1/" target="_blank">watson-int.com</a></li>
+            <li>QYResearch — p-Anisidine Global Market Outlook 2025–2031 (USD 102M→142M, CAGR 4.4%) | <a href="https://www.qyresearch.com/reports/5045149/p-anisidine" target="_blank">qyresearch.com</a></li>
+            <li>Global Info Research via Market Research Report Store — p-Anisidine Market 2025–2031 | USD 105M→145M | <a href="https://www.marketresearchreportstore.com/reports/1366994/p-anisidine" target="_blank">marketresearchreportstore.com</a></li>
+            <li>Reports and Data — p-Anisidine Market Size, Share and Trends Outlook 2034 | USD 0.15B→0.25B (2024–2034) | <a href="https://www.reportsanddata.com/report-detail/p-anisidine-market" target="_blank">reportsanddata.com</a></li>
+            <li>LP Information — Global p-Anisidine Market Growth 2026–2032 (USD 107M in 2025) | <a href="https://www.lpinformationdata.com/reports/1769913/p-anisidine" target="_blank">lpinformationdata.com</a></li>
+            <li>ChemicalBook Article — p-Anisidine: properties, applications and safety | June 2026 | <a href="https://www.chemicalbook.com/article/p-anisidine-properties-applications-and-safety.htm" target="_blank">chemicalbook.com/article</a></li>
+            <li>Aarti Industries Ltd. — Para Anisidine (PA) manufacturer, India | <a href="https://www.aarti-industries.com/Products/chemical-products/chemistry/hydrogenation/-para-anisidine-(pa)" target="_blank">aarti-industries.com</a></li>
+            <li>Wikipedia — p-Anisidine (parent compound background) | <a href="https://en.wikipedia.org/wiki/P-Anisidine" target="_blank">en.wikipedia.org/wiki/P-Anisidine</a></li>
+            <li>TradeIndia — p-Anisidine Manufacturers, Dealers &amp; Exporters India | <a href="https://www.tradeindia.com/manufacturers/p-anisidine.html" target="_blank">tradeindia.com</a></li>
+            <li>AR Reagent Chemical — P Anisidine and Its Role in Modern Chemical Manufacturing (includes N-Methyl-p-anisidine specialty derivative discussion) | <a href="https://www.ar-reagent.com/knowledge/supplement/p-anisidine-anisidine-4-aminoanisole-4-anisidine-anisidin-anisidine-structure-anisidine-value-meta-nitro-para-anisidine-n-methyl-p-anisidine-p-anisidin-p-anisidine-cas-p-anisidine-cas-no-p-anisidine-c.html" target="_blank">ar-reagent.com</a></li>
+            <li>MSIHC Rules India Compliance Guide 2026 — Maven Regulatory Solutions | <a href="https://www.mavenrs.com/blog/msihc-rules-india-hazardous-chemical-management-compliance-guide" target="_blank">mavenrs.com</a></li>
+            <li>Australian Industrial Chemicals Introduction Scheme (AICIS) — p-Anisidine and its hydrochloride: Human health tier II assessment | <a href="https://www.industrialchemicals.gov.au/sites/default/files/p-Anisidine%20and%20its%20hydrochloride_Human%20health%20tier%20II%20assessment.pdf" target="_blank">industrialchemicals.gov.au</a></li>
+            <li>Sudarshan Chemical Industries — Organic Pigments &amp; Dye Intermediates, India | <a href="https://www.sudarshan.com/" target="_blank">sudarshan.com</a></li>
+            <li>Syngene International Ltd. — CRO/CDMO, India | <a href="https://www.syngeneintl.com/" target="_blank">syngeneintl.com</a></li>
+            <li>PI Industries Ltd. — Agrochemicals &amp; CSM, India | <a href="https://www.piindustries.com/" target="_blank">piindustries.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <footer>
+    CONFIDENTIAL — INTERNAL USE ONLY<br>
+    Prepared by Market Intelligence &amp; Data Analytics | June 2026<br>
+    Based on publicly available secondary sources. Trade data for N-Methyl-p-anisidine (CAS 5961-59-1) is limited; estimates flagged accordingly throughout report.<br>
+    <strong>To export as PDF:</strong> Click "⬇ Download PDF" in the sidebar, or File → Print → Save as PDF in Chrome (enable Background Graphics for color preservation).
+  </footer>
+
+</div><!-- /main -->
+
+<script>
+  // Active sidebar nav on scroll
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('#sidebar nav a');
+
+  function updateActive() {
+    let current = '';
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top <= 80) current = sec.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+    });
+  }
+
+  document.getElementById('main').addEventListener('scroll', updateActive);
+  window.addEventListener('scroll', updateActive);
+  document.addEventListener('DOMContentLoaded', updateActive);
+</script>
+</body>
+</html>
